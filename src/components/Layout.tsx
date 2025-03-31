@@ -4,6 +4,7 @@ import ApplyBtn from './Footer';
 import { useRef } from 'react';
 import AdmissionForm from './AdmissionForm';
 import Process from '../../../../admissionportal/src/componets/Process';
+import Youtube from './Youtube';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -47,6 +48,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <AdmissionForm ref = {firstComponentRef}/>
       <Process/>
+      <Youtube/>
       <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
     </div>
   );

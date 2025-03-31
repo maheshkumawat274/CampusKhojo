@@ -45,7 +45,7 @@ const Header: React.FC = () => {
         <div className="md:hidden">
         <div className='flex items-center'>
             <img src="./images/logo.png" alt="Logo" className="h-14 w-auto" />
-            <h1 className='text-xl font-bold text-blue-700'>CampusKhojo</h1>
+            <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-700'>CampusKhojo</h1>
             </div>
         </div>
 
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block mr-8 ">
             <div className='flex items-center'>
             <img src="./images/logo.png" alt="Logo" className="h-28 w-auto" />
-            <h1 className='text-xl font-bold text-blue-700'>CampusKhojo</h1>
+            <h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-700'>CampusKhojo</h1>
             </div>
           </div>
         </nav>
