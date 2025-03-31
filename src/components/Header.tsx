@@ -1,5 +1,6 @@
 import type React from 'react';
 import { useState, useEffect } from 'react';
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,17 +63,27 @@ const Header: React.FC = () => {
 
         {/* Icons Section */}
         <div className="flex items-center space-x-2 md:space-x-4">
-          <button className="p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors" aria-label="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-          </button>
-          <button className="p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors" aria-label="Profile">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-            </svg>
-          </button>
+        <div className="flex items-center space-x-2 md:space-x-4">
+      {/* Call Button */}
+      <a
+        href="tel:+916239180723"
+        className="p-2 rounded-full transition-colors hover:scale-110"
+        aria-label="Call"
+      >
+        <FaPhoneAlt className="h-5 w-5 text-white" />
+      </a>
+
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/916239180723"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 rounded-full transition-colors hover:scale-110"
+        aria-label="WhatsApp"
+      >
+        <FaWhatsapp className="h-5 w-5 text-white" />
+      </a>
+    </div>
         </div>
       </div>
     </header>
