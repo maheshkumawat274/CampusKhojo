@@ -19,7 +19,7 @@ const CategoryLink: React.FC<CategoryLinkProps> = ({ name, path, isUnderlined })
   <a
     onClick={handleClick}
     href={path}
-    className={`block py-2 ${isUnderlined ? 'border-b border-purple-700' : ''} hover:text-purple-700 transition-colors`}
+    className={`block py-2 ${isUnderlined ? 'border-b border-blue-500' : ''} hover:text-blue-500 transition-colors`}
   >
     {name}
   </a>
@@ -55,8 +55,8 @@ const Hero: React.FC = () => {
 
       {/* Left column with text and categories */}
       <div className="w-full md:w-1/2 lg:w-2/5 z-10">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-6 md:mb-8 leading-tight">
-          Admissions Open 2025: Apply Now!
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 mb-6 md:mb-8 leading-tight">
+       <span className='text-yellow-400'>CampusKhojo</span> – Your Dream College Awaits!
         </h1>
         
         <div className="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-2 mb-8 sm:mb-10">
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
         <button
           
           
-          className="relative py-2 px-8 text-black text-base font-bold nded-full overflow-hidden bg-white border-2 border-purple-700 rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-purple-700 before:to-purple-500 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+          className="relative py-2 px-8 text-black text-base font-bold nded-full overflow-hidden bg-white border-2 border-blue-500 rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
         >
           <a onClick={handleClick} href="https://guidance.campuskhojo.in/?utm_source=CampusKhojo&utm_medium=Apply_now&utm_campaign=landingpage">Apply now</a>
         </button>
@@ -83,11 +83,15 @@ const Hero: React.FC = () => {
         {/* Mobile image - only shown on small screens */}
         <div className="block md:hidden mt-8">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="/images/campus-students.jpg"
-              alt="Students walking on campus"
-              className="w-full h-auto object-cover"
-            />
+          <iframe
+            
+            src="https://www.youtube.com/embed/fiUvXihFeNE?si=oNeMNhwRNaRlPR6N"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-[300px] object-cover"
+          ></iframe>
 
             {/* Overlay dots pattern */}
             <div className="absolute right-0 top-0">
@@ -113,11 +117,15 @@ const Hero: React.FC = () => {
 
           {/* Image container with shadow and rounded corners */}
           <div className="relative overflow-hidden rounded-lg shadow-xl">
-            <img
-              src="/images/campus-students.jpg"
-              alt="Students walking on campus"
-              className="w-full h-auto object-cover"
-            />
+          <iframe
+            
+            src="https://www.youtube.com/embed/fiUvXihFeNE?si=oNeMNhwRNaRlPR6N"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-[300px] object-cover"
+          ></iframe>
 
             {/* Overlay dots pattern */}
             <div className="absolute right-0 top-0">

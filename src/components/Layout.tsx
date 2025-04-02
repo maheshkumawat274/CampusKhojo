@@ -1,12 +1,12 @@
 import type React from 'react';
-import Header from './Header';
+import Header from './header/Header';
 import ApplyBtn from './Footer';
 import { useRef } from 'react';
-import AdmissionForm from './AdmissionForm';
+import AdmissionForm from './home/AdmissionForm';
 import Process from '../../../../admissionportal/src/componets/Process';
-import Youtube from './Youtube';
-import GuidanceCard from './Contact';
-import Contactus from './Contact';
+import Youtube from './home/Youtube';
+import Contactus from './home/Contact';
+import FAQSection from './home/Faqs';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -50,12 +50,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <AdmissionForm ref = {firstComponentRef}/>
       <Process/>
-      <Contactus title="Free Guidance Call"
-        description="Get expert advice on your admission process. Contact us now!"
-        phoneNumber="+916239180723"
-        whatsappNumber="+916239180723"
-        imageUrl="./images/49053.jpg"/>
+      <Contactus/>
       <Youtube/>
+      <FAQSection/>
       <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
     </div>
   );
