@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
               <h2 className="text-lg font-bold mb-2 sm:mb-4">Connect With Us</h2>
               <div className="flex space-x-4 mb-2">
                 <a className='hover:scale-110' href='href="https://www.youtube.com/@campuskhoj'><CiYoutube size={30}/></a>
-                <a href="tel:+916239180723" aria-label="Call" className='hover:scale-110'><FaWhatsapp size={30}/></a>
-                <a href="https://wa.me/916239180723" target="_blank" rel="noopener noreferrer"  aria-label="WhatsApp" className='hover:scale-110'><IoIosCall size={30}/></a>
+                <a href="https://wa.me/916239180723" aria-label="Call" className='hover:scale-110'><FaWhatsapp size={30}/></a>
+                <a href="tel:+916239180723" target="_blank" rel="noopener noreferrer"  aria-label="WhatsApp" className='hover:scale-110'><IoIosCall size={30}/></a>
               </div>
             </div>
 

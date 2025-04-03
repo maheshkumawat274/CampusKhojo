@@ -5,7 +5,7 @@ function About() {
     <section className="container mx-auto py-12 flex flex-col md:flex-row items-center">
       {/* Left Side Content */}
       <div className="md:w-1/2 md:text-left px-2 sm:px-4">
-        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-7xl text-center font-bold text-gray-900">Welcome to Campus Khojo</h2>
+        <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-7xl font-bold text-gray-900">Welcome to Campus Khojo</h2>
         <p className="mt-4 text-gray-700 text-lg">
           Campus Khojo is a platform that provides real experiences of colleges and universities
           through video tours. We help students and parents get authentic insights, making it easier 
