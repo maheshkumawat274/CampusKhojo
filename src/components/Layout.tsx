@@ -7,6 +7,7 @@ import Process from '../../../../admissionportal/src/componets/Process';
 import Youtube from './home/Youtube';
 import Contactus from './home/Contact';
 import FAQSection from './home/Faqs';
+import CollegeCards from './home/Universitylist';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -50,6 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <AdmissionForm ref = {firstComponentRef}/>
       <Process/>
+      <CollegeCards/>
       <Contactus/>
       <Youtube/>
       <FAQSection/>

@@ -21,7 +21,7 @@ const universities: University[] = [
   {
     name: "GN Group of Institutes",
     description: "Based in Greater Noida, GN Group of Institutes provides quality education across multiple disciplines with a vibrant campus life.",
-    videoUrl: "https://www.youtube.com/embed/ZZZZZZ",
+    videoUrl: "https://www.youtube.com/embed/fiUvXihFeNE?si=YPGHm8UQ5207JVu9",
   },
   {
     name: "Tula's Institute, Dehradun",
@@ -59,16 +59,24 @@ const UniversityCards: React.FC = () => {
 
   const [popupVideo, setPopupVideo] = useState<string | null>(null);
 
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault(); // Prevent default link behavior
+      const url = event.currentTarget.href; // Extract the href
+      const newTab = window.open(url, "_blank", "noopener,noreferrer");
+      if (newTab) {
+        newTab.opener = null;
+      }
+    };
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto text-center">
       <h2 className="text-4xl font-bold text-center mb-10">🏫 Top Universities</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 sm:px-0">
         {universities.map((uni, index) => (
           <div
             key={index}
             className="group min-h-[400px] bg-gray-200 rounded-lg flex flex-col gap-2 relative after:absolute after:h-full after:bg-[#abd373] z-20 shadow-lg after:-z-20 after:w-full after:inset-0 after:rounded-lg transition-all duration-300 hover:transition-all hover:duration-300 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden cursor-pointer after:-translate-y-full after:hover:translate-y-0 [&_p]:delay-200 [&_p]:transition-all"
           >
-            <div className="p-4 flex flex-col justify-between h-full">
+            <div className="p-2 sm:p-4 flex flex-col justify-between h-full">
               <div>
                 <h3 className="text-2xl font-semibold">{uni.name}</h3>
                 <p className="text-gray-600 mt-2">{uni.description}</p>
@@ -112,6 +120,13 @@ const UniversityCards: React.FC = () => {
       </div>
       
       )}
+      <button
+         className="relative py-2 px-8 text-black text-base font-bold nded-full overflow-hidden bg-white border-2 border-purple-700 rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-purple-700 before:to-purple-500 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0 mt-8"
+       >
+         <a onClick={handleClick} href="https://www.youtube.com/@campuskhoj">
+         WATCH MORE VIDEOS!
+         </a>
+       </button>
     </div>
 
   );

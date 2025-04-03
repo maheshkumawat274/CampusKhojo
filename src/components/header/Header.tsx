@@ -72,17 +72,17 @@ const Header: React.FC = () => {
           <ul className="flex flex-col md:flex-row pt-9">
             <li className="py-2 px-6 md:px-4 border-b border-gray-100 md:border-none">
               <Link to='/'>
-              <a className="block text-blue-500 font-medium border-b-2 hover:border-blue-500 pb-1">HOME</a>
+              <a className="block text-black font-medium border-b-2 hover:border-black pb-1">HOME</a>
               </Link>
             </li>
             <li className="py-2 px-6 md:px-4 border-b border-gray-100 md:border-none">
               <Link to='/about'>
-              <a className="block text-blue-500 font-medium border-b-2 hover:border-blue-500 pb-1">ABOUT</a>
+              <a className="block text-black font-medium border-b-2 hover:border-black pb-1">ABOUT</a>
               </Link>
             </li>
             <li className="py-2 px-6 md:px-4">
               <Link to='/contact'>
-              <p className="block text-blue-500 transition-colors border-b-2 hover:border-blue-500 pb-1">CONTACT US</p>
+              <p className="block text-black transition-colors border-b-2 hover:border-black pb-1">CONTACT US</p>
               </Link>
             </li>
           </ul>

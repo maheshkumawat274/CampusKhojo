@@ -30,27 +30,13 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
               <h2 className="text-lg font-bold mb-2 sm:mb-4">Connect With Us</h2>
               <div className="flex space-x-4 mb-2">
-                <a className='hover:scale-110' href='href="https://www.youtube.com/@campuskhoj'><CiYoutube size={30}/></a>
+                <a className='hover:scale-110' href="https://www.youtube.com/@campuskhoj"><CiYoutube size={30}/></a>
                 <a href="https://wa.me/916239180723" aria-label="Call" className='hover:scale-110'><FaWhatsapp size={30}/></a>
                 <a href="tel:+916239180723" target="_blank" rel="noopener noreferrer"  aria-label="WhatsApp" className='hover:scale-110'><IoIosCall size={30}/></a>
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-medium mb-2 sm:mb-4">Newsletter</h3>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-l focus:outline-none"
-                />
-                <button
-                  className="bg-blue-500 hover:bg-blue-600 transition-colors px-4 py-2 text-white rounded-r"
-                >
-                  Sign Up
-                </button>
-              </div>
-            </div>
+            
           </div>
         </div>
 

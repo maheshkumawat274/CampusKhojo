@@ -1,5 +1,5 @@
 import React from "react";
-import MainForm from "../MainForm";
+import MainForm from "./MainForm";
 
 const AdmissionForm = React.forwardRef<HTMLDivElement>((_, ref) => {
   return (
